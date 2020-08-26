@@ -166,7 +166,7 @@ class Header extends Component {
                     </ModalBody>
                 </Modal>
                 <Modal isOpen={this.state.isregisterModalOpen} toggle={this.toggleregisterModal}>
-                    <ModalHeader toggle={this.toggleregisterModal}>Login</ModalHeader>
+                    <ModalHeader toggle={this.toggleregisterModal}>Register</ModalHeader>
                     <ModalBody>
                     <Form onSubmit={this.handleRegister}>
                             <FormGroup>
