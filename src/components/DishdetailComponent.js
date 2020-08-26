@@ -54,11 +54,15 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
                                         <li>
                                         <p>{comment.comment}</p>
                                         <p>{comment.rating} stars</p>
-                                        {auth.user && auth.user.username===comment.author.username ?
+                                        {auth.user  ?
+                                            {auth.user.username===comment.author.username ?
                                            
                                            <Button onClick={()=>deleteComment(comment._id)} style={{color:"white",backgroundColor:"maroon",fontSize:"12px"}}>Delete</Button>
                                        
-                                       : null
+                                                : null
+                                        }
+                                        : null
+                                            }
                                    }
                                         <p>-- {comment.author.firstname} {comment.author.lastname} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comment.updatedAt)))}</p>
                                         </li>
