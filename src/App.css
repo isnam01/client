@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+body {
+  font-family: 'Josefin Sans', cursive;
+}
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+    min-height:250px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:200px;
+}
+
+.footer{
+    background-color: #0e0c0cf1;
+    margin:0px auto;
+    margin-top:25px;
+    padding: 20px 0px 20px 0px;
+    color:white;
+}
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    margin-bottom: 20px;
+    font-family: 'Raleway Dots', cursive;
+    background: linear-gradient(
+                     rgba(0,0,0, .5), 
+                     rgba(0,0,0, .5)),
+                     url(../src/assets/bg.jpg);
+    color:floralwhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.navbar-dark {
+    background-color:black;
+}
+
+.page-enter {
+    opacity: 0.01;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 300ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.page-exit-active {
+    opacity: 0.01;
+    transform: translateX(100%);
+    transition: all 300ms ease-out;
+}
