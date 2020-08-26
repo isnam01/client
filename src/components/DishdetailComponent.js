@@ -59,7 +59,7 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
                                            <Button onClick={()=>deleteComment(comment._id)} style={{color:"white",backgroundColor:"maroon",fontSize:"12px"}}>Delete</Button>
                                         : null
                                         }
-                                   }
+                                   
                                         <p>-- {comment.author.firstname} {comment.author.lastname} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comment.updatedAt)))}</p>
                                         </li>
                     
